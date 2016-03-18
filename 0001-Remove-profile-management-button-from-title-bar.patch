@@ -1,24 +1,25 @@
-From fd2b0ae593ed6f14774a3fed69997616cc7a21cb Mon Sep 17 00:00:00 2001
+From 02e9b3adc681ba0d2de4f2417386d32bd0b4077c Mon Sep 17 00:00:00 2001
 From: Akujin <digitalisakujin@gmail.com>
-Date: Thu, 25 Feb 2016 06:41:35 -0500
-Subject: [PATCH] Remove profile management button from title bar.
+Date: Fri, 18 Mar 2016 18:45:16 -0400
+Subject: [PATCH 1/1] Remove profile management button from title bar.
 
 ---
- chrome/browser/ui/views/frame/browser_view.cc | 1 +
- 1 file changed, 1 insertion(+)
+ chrome/browser/ui/views/frame/browser_view.cc | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/chrome/browser/ui/views/frame/browser_view.cc b/chrome/browser/ui/views/frame/browser_view.cc
-index 2edae31..22570d8 100644
+index b2e976f..139b0e8 100644
 --- a/chrome/browser/ui/views/frame/browser_view.cc
 +++ b/chrome/browser/ui/views/frame/browser_view.cc
-@@ -615,6 +615,7 @@ bool BrowserView::IsRegularOrGuestSession() const {
+@@ -642,7 +642,7 @@ bool BrowserView::ShouldShowAvatar() const {
+     return false;
+   }
+ 
+-  return AvatarMenu::ShouldShowAvatarMenu();
++  return false; // AvatarMenu::ShouldShowAvatarMenu();
+ #endif
  }
  
- bool BrowserView::ShouldShowAvatar() const {
-+	return false;
- #if defined(OS_CHROMEOS)
-   if (!browser_->is_type_tabbed() && !browser_->is_app())
-     return false;
 -- 
 1.9.5.chromium.6
 
