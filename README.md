@@ -16,8 +16,8 @@ The issue was marked as WillNotFix by the Chrome team I decided to take matters 
 The method ```bool BrowserView::ShouldShowAvatar()``` presented an easy opportunity to supress the button. The method is used to tell the UI when it should not draw the button. I simply made it say never.
 
 ### Version
-Tested on version 50.0.2660.0
-Commit ae70d4a tested on version 51.0.2681.0
+* Tested on version 50.0.2660.0
+* Commit ae70d4a tested on version 51.0.2681.0
 
 ### Usage
 * Setup your build environment by following the instructions at https://www.chromium.org/developers/how-tos
