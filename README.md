@@ -17,6 +17,7 @@ The method ```bool BrowserView::ShouldShowAvatar()``` presented an easy opportun
 
 ### Version
 Tested on version 50.0.2660.0
+Commit ae70d4a tested on version 51.0.2681.0
 
 ### Usage
 * Setup your build environment by following the instructions at https://www.chromium.org/developers/how-tos
